@@ -1,0 +1,38 @@
+#!/bin/sh
+
+set -e
+
+#Homebrewがインストールされていなければインストールする
+if [ ! -f /opt/homebrew/bin/brew ]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+
+# ホームディレクトリにdotfilesがなければクローンする
+if [ ! -d ~/dotfiles ]; then
+  cd ~
+  git clone git@github.com:xxxmammom2410/dotfiles.git
+fi
+
+
+echo "Installing packages..."
+
+brew bundle -v --file=~/dotfiles/Brewfile
+
+# ホームディレクトリにdotfilesがあればstowでシンボリックリンクを貼る
+stow -v -d ~/dotfiles/packages -t ~ zsh yabai skhd
+
+#asdfの設定
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+which asdf >/dev/null 2>&1 && asdf plugin add nodejs && asdf install nodejs latest && asdf global nodejs latest
+exec $SHELL -l
+
+# rustインストール
+# rustup-init
+# source "$HOME/.cargo/env"   
+# rustup component add rust-analyzer
+ls -la ~
+
+# PlantUMLインストール
+brew install --cask temurin
+brew install graphviz
