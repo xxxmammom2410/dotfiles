@@ -21,7 +21,7 @@ cask "blender"
 cask "mamp"
 cask "docker"
 cask "notion"
-
+cask "obsidian"
 
 mas "Xcode", id: 497799835
 mas "Slack", id: 803453959
