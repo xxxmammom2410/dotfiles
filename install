@@ -34,8 +34,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # rustup component add rust-analyzer
 ls -la ~
 
-#srround.vimインストール
+
 mkdir -p ~/.vim/pack/tpope/start
 cd ~/.vim/pack/tpope/start
+#srround.vimインストール
 git clone https://tpope.io/vim/surround.git
+#repeat.vimインストール
+git clone https://tpope.io/vim/repeat.git
 vim -u NONE -c "helptags surround/doc" -c q
