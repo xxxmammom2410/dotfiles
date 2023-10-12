@@ -28,12 +28,10 @@ which asdf >/dev/null 2>&1 && asdf plugin add nodejs && asdf install nodejs late
 exec $SHELL -l
 
 # rustインストール
-
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # rustup-init
 # source "$HOME/.cargo/env"   
 # rustup component add rust-analyzer
 ls -la ~
 
-# PlantUMLインストール
-brew install --cask temurin
-brew install graphviz
+
