@@ -2,7 +2,7 @@ brew "stow"
 brew "git"
 brew "git-lfs"
 brew "jq"
-
+brew "graphviz"
 brew "asdf"
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
@@ -22,6 +22,7 @@ cask "mamp"
 cask "docker"
 cask "notion"
 cask "obsidian"
+cask "temurin"
 
 mas "Xcode", id: 497799835
 mas "Slack", id: 803453959
