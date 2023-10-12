@@ -7,6 +7,7 @@ brew "asdf"
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
 brew "rustup-init"
+brew "plantuml"
 
 brew "mas"
 
