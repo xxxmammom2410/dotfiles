@@ -35,5 +35,9 @@ yabai -m config window_gap                   0
 
 # Rules
 yabai -m rule --add app="^LINE$" sticky=on layer=above  manage=off
+# 日本語はyabaiの設定に対応していない
+#yabai -m rule --add app="スティッキーズ" sticky=on layer=above  manage=ofF
+# 代わりにtitleで取得する
+yabai -m rule --add title=".*Sticky.*" sticky=on layer=above manage=off
 
 echo "yabai configuration loaded.."
