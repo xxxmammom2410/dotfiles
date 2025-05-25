@@ -20,7 +20,7 @@ echo "Installing packages..."
 brew bundle -v --file=~/dotfiles/Brewfile
 
 # ホームディレクトリにdotfilesがあればstowでシンボリックリンクを貼る
-stow -v -d ~/dotfiles/packages -t ~ zsh yabai skhd
+stow -v -d ~/dotfiles/packages -t ~ zsh yabai skhd karabiner-element
 
 #asdfの設定
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
