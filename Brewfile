@@ -29,6 +29,7 @@ cask "arc"
 cask "affinity-designer"
 cask "affinity-photo"
 cask "obs"
+cask "monitorcontrol"
 
 
 mas "Xcode", id: 497799835
