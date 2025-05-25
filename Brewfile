@@ -25,6 +25,7 @@ cask "notion"
 cask "obsidian"
 cask "temurin"
 cask "karabiner-elements"
+cask "arc"
 
 mas "Xcode", id: 497799835
 mas "Slack", id: 803453959
