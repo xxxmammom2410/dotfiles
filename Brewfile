@@ -28,6 +28,7 @@ cask "karabiner-elements"
 cask "arc"
 cask "affinity-designer"
 cask "affinity-photo"
+cask "obs"
 
 
 mas "Xcode", id: 497799835
