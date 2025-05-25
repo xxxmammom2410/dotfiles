@@ -26,6 +26,9 @@ cask "obsidian"
 cask "temurin"
 cask "karabiner-elements"
 cask "arc"
+cask "affinity-designer"
+cask "affinity-photo"
+
 
 mas "Xcode", id: 497799835
 mas "Slack", id: 803453959
