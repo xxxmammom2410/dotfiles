@@ -9,6 +9,7 @@ brew "koekeishiya/formulae/skhd"
 brew "rustup-init"
 brew "plantuml"
 brew "mactex-no-gui"
+brew "r"
 
 brew "mas"
 
@@ -32,7 +33,7 @@ cask "affinity-photo"
 cask "obs"
 cask "monitorcontrol"
 cask "zotero"
-
+cask "rstudio"
 
 
 mas "Xcode", id: 497799835
