@@ -8,6 +8,7 @@ brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
 brew "rustup-init"
 brew "plantuml"
+brew "mactex-no-gui"
 
 brew "mas"
 
@@ -30,6 +31,8 @@ cask "affinity-designer"
 cask "affinity-photo"
 cask "obs"
 cask "monitorcontrol"
+cask "zotero"
+
 
 
 mas "Xcode", id: 497799835
