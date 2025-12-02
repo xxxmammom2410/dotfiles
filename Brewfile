@@ -34,6 +34,7 @@ cask "obs"
 cask "monitorcontrol"
 cask "zotero"
 cask "rstudio"
+cask "quarto"
 
 
 mas "Xcode", id: 497799835
