@@ -40,4 +40,6 @@ yabai -m rule --add app="^LINE$" sticky=on layer=above  manage=off
 # 代わりにtitleで取得する
 yabai -m rule --add title=".*Sticky.*" sticky=on layer=above manage=off
 
+yabai -m rule --add app="^IINA$"  manage=off
+
 echo "yabai configuration loaded.."

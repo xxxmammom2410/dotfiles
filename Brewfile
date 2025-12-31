@@ -35,6 +35,7 @@ cask "monitorcontrol"
 cask "zotero"
 cask "rstudio"
 cask "quarto"
+cask "iina"
 
 
 mas "Xcode", id: 497799835
