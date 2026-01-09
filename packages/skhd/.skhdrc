@@ -10,6 +10,10 @@ shift + alt - h : yabai -m window --swap west
 shift + alt - j : yabai -m window --swap south
 shift + alt - k : yabai -m window --swap north
 shift + alt - l : yabai -m window --swap east
+
+
+shift + ctrl - left : yabai -m window --swap west || yabai -m window --display west; yabai -m display --focus west
+shift + ctrl - right : yabai -m window --swap east || yabai -m window --display east; yabai -m display --focus east
 # move window
 shift + cmd - h : yabai -m window --warp west
 shift + cmd - j : yabai -m window --warp south
