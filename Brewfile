@@ -36,6 +36,7 @@ cask "zotero"
 cask "rstudio"
 cask "quarto"
 cask "iina"
+cask "maccky"
 
 
 mas "Xcode", id: 497799835
