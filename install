@@ -22,10 +22,21 @@ brew bundle -v --file=~/dotfiles/Brewfile
 # ホームディレクトリにdotfilesがあればstowでシンボリックリンクを貼る
 stow -v -d ~/dotfiles/packages -t ~ zsh yabai skhd karabiner-element
 
-#asdfの設定
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
-which asdf >/dev/null 2>&1 && asdf plugin add nodejs && asdf install nodejs latest && asdf global nodejs latest
-exec $SHELL -l
+#nvmの設定
+mkdir ~/.nvm
+cat << 'EOF' >> ~/.zshrc
+# nvm (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+EOF
+
+source ~/.zshrc
+
+# nodeとpnpmのインストール
+nvm install node
+npm install -g pnpm
+
 
 # rustインストール
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
